@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1, h2, h3, h4, h5, h6, p {
+        color: #212529;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .bg-gold-gradient {
+        background: linear-gradient(270deg, #E2C299 6%, #C5A67C 94%);
+    }
+
+    .border-gold-gradient {
+        background: linear-gradient(white, white) padding-box,
+        linear-gradient(270deg, #E2C299 6%, #C5A67C 94%) border-box !important;
+        border: 2px solid transparent;
+    }
+
+    @media (max-width: 640px) {
+        h2 {
+            font-size: 18px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
