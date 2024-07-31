@@ -17,7 +17,6 @@ import CurrencyCard from "@/components/CurrencyCard.vue";
 const selectedPrice = ref(null)
 const selectedCurrency = ref(null)
 const selectedPaymentMethod = ref(null)
-const paymentAmountError = ref(null)
 const currencies = ref([])
 const cryptoSelected = ref(false)
 const countryInfoDropdown = ref(false)
