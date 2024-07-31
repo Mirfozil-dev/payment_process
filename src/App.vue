@@ -54,6 +54,7 @@ const selectCurrency = (currency) => {
   selectedCurrency.value = currency
   cryptoSelected.value = false
   selectedPaymentMethod.value = null
+  selectedPrice.value = null
 }
 onMounted(() => {
   axiosInstance.get('/api/ui/payment/info')
