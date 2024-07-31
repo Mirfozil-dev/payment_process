@@ -111,7 +111,7 @@ onMounted(() => {
       </article>
     </section>
     <AccordionAnimation :show="otherCurrencies">
-      <section class="flex gap-4 mt-4 overflow-hidden px-1 py-2 w-full">
+      <section class="flex gap-4 mt-4 p-2 w-full m-[-8px]">
         <currency-card v-for="currency in filteredCurrencies" :key="currency" :currency="currency"
                        @selectCurrency="selectCurrency"/>
       </section>
@@ -153,17 +153,3 @@ onMounted(() => {
     <submit-btn @on-submit="onSubmit()"/>
   </main>
 </template>
-
-
-<style>
-.v-enter-active,
-.v-leave-active {
-  will-change: height;
-  transition: height 0.3s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  height: 0 !important;
-}
-</style>

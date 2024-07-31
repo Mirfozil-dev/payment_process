@@ -19,12 +19,21 @@ defineProps(['show'])
       @before-leave="startTransition"
       @after-leave="endTransition"
   >
-    <div v-if="show" class="overflow-hidden">
+    <div v-if="show" class="overflow-hidden p-2 m-[-8px]">
       <slot/>
     </div>
   </transition>
 </template>
 
 <style scoped>
+.v-enter-active,
+.v-leave-active {
+  will-change: height;
+  transition: height 0.3s ease;
+}
 
+.v-enter-from,
+.v-leave-to {
+  height: 0 !important;
+}
 </style>
