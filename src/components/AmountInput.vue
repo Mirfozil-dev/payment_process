@@ -25,10 +25,10 @@ watch(selectedPrice, (newVal) => {
 <template>
   <div
       :class="paymentAmountError ? 'border-[#E86068] outline-0' : 'border-transparent'"
-      class="flex items-center px-4 sm:px-5 py-4 mt-4 w-full text-sm sm:text-base bg-white rounded-xl outline outline-[#0000001A] transition-all
+      class="flex items-center px-4 sm:px-5 mt-4 w-full text-sm sm:text-base bg-white rounded-xl outline outline-[#0000001A] transition-all
          border-solid border-2 hover:outline-[#0000004D]">
     <input
-        class="outline-0 w-full text-neutral-800"
+        class="outline-none w-full text-neutral-800 py-4"
         v-model="selectedPrice"
         type="number"
         :readonly="!selectedPaymentMethod"
