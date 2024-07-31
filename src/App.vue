@@ -56,6 +56,11 @@ const selectCurrency = (currency) => {
   selectedPaymentMethod.value = null
   selectedPrice.value = null
 }
+const selectCrypto = () => {
+  cryptoSelected.value = true
+  selectedPaymentMethod.value = null
+  selectedPrice.value = null
+}
 onMounted(() => {
   axiosInstance.get('/api/ui/payment/info')
       .then(res => {
@@ -84,7 +89,7 @@ onMounted(() => {
     </section>
     <section class="flex gap-4 mt-4 max-md:flex-wrap">
       <article
-          @click="cryptoSelected = true"
+          @click="selectCrypto()"
           class="flex h-16 px-4 sm:px-6 rounded-xl shadow-[0px_0px_15px_0px_#0000000F] relative items-center cursor-pointer"
       >
         <span class="bg-gold-gradient px-1.5 py-0.5 text-xs text-white rounded-[100px] absolute top-0.5 right-0.5">
