@@ -37,7 +37,31 @@ mock.onGet('/api/ui/payment/info').reply(200, {
                     "min_amount": 30,
                     "description": "Зачисление до 6 минут\u003Cbr\u003EЭта платежная система не принимает платежи из стран:\u003Cbr\u003EАрмения, Белоруссия, Казахстан, Киргизия",
                     "sort_order": 1
-                }
+                },
+                {
+                    "title": "Картой МИР",
+                    "code": "mir",
+                    "commission": "3%",
+                    "min_amount": 1000,
+                    "description": "Зачисление до 2 часа",
+                    "sort_order": 3
+                },
+                {
+                    "title": "СБП",
+                    "code": "sbp",
+                    "commission": "4%",
+                    "min_amount": 500,
+                    "description": "Зачисление до 1.5 часа",
+                    "sort_order": 4
+                },
+                {
+                    "title": "SteamPay",
+                    "code": "steampay",
+                    "commission": "8%",
+                    "min_amount": 800,
+                    "description": "Зачисление до 3 часа",
+                    "sort_order": 5
+                },
             ],
             "USD": [
                 {
@@ -71,7 +95,7 @@ mock.onGet('/api/ui/payment/info').reply(200, {
 
 mock.onPost('/api/ui/payments/invoice/create/').reply(config => {
     const {currency, method, amount} = JSON.parse(config.data);
-    
+
     if (currency && method && amount) {
         return [200, {
             success: true,
