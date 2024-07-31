@@ -1,6 +1,4 @@
 <script setup>
-
-
 import Tooltip from "@/components/UI/Tooltip.vue";
 import CurrenciesIcon from "@/components/icons/CurrenciesIcon.vue";
 import DropdownIcon from "@/components/icons/DropdownIcon.vue";

@@ -45,6 +45,12 @@
         border: 2px solid transparent;
     }
 
+    @media (min-width: 1024px) {
+        .container {
+            max-width: 1160px !important;
+        }
+    }
+
     @media (max-width: 640px) {
         h2 {
             font-size: 18px;
