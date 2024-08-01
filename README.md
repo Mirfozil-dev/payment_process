@@ -1,14 +1,19 @@
-# payment_test
+# Responsive Payment Process Page
 
-This template should help get you started developing with Vue 3 in Vite.
+This project demonstrates a responsive payment process page built with Vue.js and styled using Tailwind CSS. It leverages Axios for API requests, utilizing a mock backend to simulate payment processing workflows.
 
-## Recommended IDE Setup
+## Key Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Responsive Design:** The page adapts seamlessly to various screen sizes, ensuring a consistent user experience across devices.
+- **Vue.js:** Utilizes Vue.js for component-based architecture, enhancing the maintainability and scalability of the application.
+- **Tailwind CSS:** Implements Tailwind CSS for rapid UI development and consistent styling.
+- **Mock Backend:** Uses Axios with a mock backend to handle API requests, enabling easy testing and development without relying on a live server.
 
-## Customize configuration
+## Technologies Used
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Frontend:** Vue.js, Tailwind CSS
+- **API Client:** Axios
+- **Testing:** Mock backend for API simulations
 
 ## Project Setup
 
